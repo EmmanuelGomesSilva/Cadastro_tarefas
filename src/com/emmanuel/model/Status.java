@@ -7,7 +7,7 @@ public enum Status {
 
     // Converte string para Status, ignorando acentos e maiúsculas
     public static Status fromString(String str) {
-        str = str.toUpperCase().replace("Á", "A");
+        str = str.toUpperCase().replace("Í", "I");
         return Status.valueOf(str);
     }
 }

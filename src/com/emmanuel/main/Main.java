@@ -44,8 +44,8 @@ public class Main {
                     while (true) {
                         try {
                             System.out.println("Status (ABERTA ou CONCLUÍDA):");
-                            String statusStr = scanner.nextLine().toUpperCase().replace("Í", "I");
-                            status = Status.valueOf(statusStr);
+                            String statusStr = scanner.nextLine();
+                            status = Status.fromString(statusStr);
                             break;
                         } catch (IllegalArgumentException e) {
                             System.out.println("Status inválido! Digite ABERTA ou CONCLUIDA.");
